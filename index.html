@@ -15,9 +15,9 @@
         <h3 class="">University CGPA Calculator</h3>
     </header>
     <!-- section -->
-    <section class="bg-[#212229] h-[calc(100vh-56px)] w-full flex flex-col pt-10 items-center">
+    <section class="bg-[#212229] h-[calc(100vh-56px)] w-full flex flex-col items-center">
         <!-- main section -->
-        <main class=" md:w-4/12 w-11/12 flex flex-col justify-center items-center">
+        <main class=" md:w-4/12 w-11/12 flex flex-col justify-center items-center py-6">
             <!-- input area -->
             <div class="w-full h-14 flex flex-row">
                 <input type="text"
@@ -30,39 +30,42 @@
                 <div class="md:w-7/12 flex flex-row justify-end gap-2">
                     <button class="bg-[#c2410e] h-12 w-20 rounded-xl text-white">Remove</button>
                     <button class="bg-[#c2410e] h-12 w-12 rounded-xl text-white">/</button>
-                    <button class="bg-[#c2410e] h-12 w-12 rounded-xl text-white">+</button>
+                    <button class="bg-[#c2410e] h-12 w-12 rounded-xl text-2xl text-white">+</button>
                     <button class="bg-[#c2410e] h-12 w-12 rounded-xl text-white">AC</button>
                 </div>
             </div>
-            <!-- grade area -->
+            <!-- CGPA area -->
             <div class="bg-[#f1f5f9] p-4 rounded-lg flex flex-row justify-between w-full">
-                <div class="flex flex-col gap-5">
-                    <div class="flex flex-row gap-5">
-                        <button
-                            class="h-14 w-14 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">A+</button>
-                        <button
-                            class="h-14 w-14 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">A</button>
-                        <button
-                            class="h-14 w-14 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">A-</button>
+                <div class="w-full">
+                    <div class="flex flex-col gap-5">
+                        <div class="flex flex-row gap-5">
+                            <button
+                                class="md:h-14 md:w-14 w-12 h-12 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">A+</button>
+                            <button
+                                class="md:h-14 md:w-14 w-12 h-12 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">A</button>
+                            <button
+                                class="md:h-14 md:w-14 w-12 h-12 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">A-</button>
+                        </div>
+                        <div class="flex flex-row gap-5">
+                            <button
+                                class="md:h-14 md:w-14 w-12 h-12 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">B+</button>
+                            <button
+                                class="md:h-14 md:w-14 w-12 h-12 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">B</button>
+                            <button
+                                class="md:h-14 md:w-14 w-12 h-12 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">B-</button>
+                        </div>
+                        <div class="flex flex-row gap-5">
+                            <button
+                                class="md:h-14 md:w-14 w-12 h-12 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">C+</button>
+                            <button
+                                class="md:h-14 md:w-14 w-12 h-12 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">C</button>
+                            <button
+                                class="md:h-14 md:w-14 w-12 h-12 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">D</button>
+                        </div>
+                        
                     </div>
-                    <div class="flex flex-row gap-5">
-                        <button
-                            class="h-14 w-14 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">B+</button>
-                        <button
-                            class="h-14 w-14 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">B</button>
-                        <button
-                            class="h-14 w-14 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">B-</button>
-                    </div>
-                    <div class="flex flex-row gap-5">
-                        <button
-                            class="h-14 w-14 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">C+</button>
-                        <button
-                            class="h-14 w-14 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">C</button>
-                        <button
-                            class="h-14 w-14 bg-[#7f00fe] rounded-xl text-white text-2xl font-extrabold shadow-md  shadow-violet-800">C-</button>
-                    </div>
-                    <div class="flex flex-row justify-center items-center">
-                        <button class="bg-red-700 text-white font-extrabold text-2xl h-14 w-14 rounded-full ">F</button>
+                    <div class="flex flex-row justify-center items-center w-full mt-7 mb-2">
+                        <button class="bg-red-700 shadow-md  shadow-violet-800 text-white font-extrabold text-2xl h-14 w-14 rounded-full ">F</button>
                     </div>
                 </div>
                 <div class="flex flex-col gap-5 w-2/12 items-end md:pr-4">
@@ -77,6 +80,9 @@
                 </div>
             </div>
         </main>
+        <div class="bg-[#3E0040] fixed bottom-0 w-full ">
+            <p class="text-center text-sm font-light text-white">Made by Al Emran</p>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>

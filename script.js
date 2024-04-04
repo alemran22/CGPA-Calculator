@@ -17,6 +17,45 @@ input.forEach((button) => {
             sum = eval(sum);
             output.value = sum.toFixed("2");
         }
+        else if (inputValue == "A+") {
+            sum = 4;
+            output.value = sum;
+        }
+         else if (inputValue == "A") {
+            sum = 3.75;
+            output.value = sum;
+        }
+        else if (inputValue == "A-") {
+            sum = 3.5;
+            output.value = sum;
+        }
+            else if (inputValue == "B+") {
+            sum = 3.25;
+            output.value = sum;
+        }
+            else if (inputValue == "B") {
+            sum = 3;
+            output.value = sum;
+        }
+              else if (inputValue == "B-") {
+            sum = 2.75;
+            output.value = sum;
+        }
+            else if (inputValue == "C+") {
+            sum = 2.5;
+            output.value = sum;
+        }
+            else if (inputValue == "C") {
+            sum = 2.25;
+            output.value = sum;
+        }
+            else if (inputValue == "D") {
+            sum = 2;
+            output.value = sum;
+        }
+            else if (inputValue == "F") {
+            alert(`You are not promoted.`);
+            }
         else{
             sum = sum + inputValue;
             output.value = sum;
