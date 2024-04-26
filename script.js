@@ -1,6 +1,6 @@
 const input = document.querySelectorAll("button");
 const output = document.querySelector("input");
-let sum = ""
+let sum = "";
 
 input.forEach((button) => {
     button.addEventListener("click", function (){
@@ -9,48 +9,53 @@ input.forEach((button) => {
             sum = "";
             output.value = sum;
         }
-        else if (inputValue == "Remove"){
+
+        else if (inputValue == "Remove") {
+            console.log(sum);
+            sum = `${sum}`;
             sum = sum.substring(0, sum.length -1);
             output.value = sum;
+            
         }
         else if (inputValue == "="){
             sum = eval(sum);
             output.value = sum.toFixed("2");
         }
         else if (inputValue == "A+") {
-            sum = 4;
+            sum = sum + 4; 
             output.value = sum;
         }
+            
          else if (inputValue == "A") {
-            sum = 3.75;
+            sum = sum + 3.75;
             output.value = sum;
         }
         else if (inputValue == "A-") {
-            sum = 3.5;
+            sum = sum + 3.5;
             output.value = sum;
         }
             else if (inputValue == "B+") {
-            sum = 3.25;
+            sum = sum + 3.25;
             output.value = sum;
         }
             else if (inputValue == "B") {
-            sum = 3;
+            sum = sum + 3;
             output.value = sum;
         }
               else if (inputValue == "B-") {
-            sum = 2.75;
+            sum = sum + 2.75;
             output.value = sum;
         }
             else if (inputValue == "C+") {
-            sum = 2.5;
+            sum = sum + 2.5;
             output.value = sum;
         }
             else if (inputValue == "C") {
-            sum = 2.25;
+            sum = sum + 2.25;
             output.value = sum;
         }
             else if (inputValue == "D") {
-            sum = 2;
+            sum = sum + 2;
             output.value = sum;
         }
             else if (inputValue == "F") {
